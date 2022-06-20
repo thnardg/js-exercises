@@ -1,0 +1,8 @@
+# ignore ALL .log files
+*.log
+
+# ignore node modules
+node_modules
+
+# ignore ALL json
+*.json
