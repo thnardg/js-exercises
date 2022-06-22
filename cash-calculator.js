@@ -1,6 +1,6 @@
 // Find the number of cents that a customer is owed and then print the smallest number of coins with which that change can be made.
 
-let cents; 
+let cents = 50; 
 
 // Calculate quarters:
 function calculate_quarters(cents)
@@ -30,25 +30,24 @@ function calculate_pennies(cents)
     return pennies;
 }
 
-
 // Calculate the number of quarters to give the customer
-    let quarters = calculate_quarters(cents);
-    cents = cents - quarters * 25;
+let quarters = calculate_quarters(cents);
+cents = cents - quarters * 25;
 
-    // Calculate the number of dimes to give the customer
-    let dimes = calculate_dimes(cents);
-    cents = cents - dimes * 10;
+// Calculate the number of dimes to give the customer
+let dimes = calculate_dimes(cents);
+cents = cents - dimes * 10;
 
-    // Calculate the number of nickels to give the customer
-    let nickels = calculate_nickels(cents);
-    cents = cents - nickels * 5;
+// Calculate the number of nickels to give the customer
+let nickels = calculate_nickels(cents);
+cents = cents - nickels * 5;
 
-    // Calculate the number of pennies to give the customer
-    let pennies = calculate_pennies(cents);
-    cents = cents - pennies * 1;
+// Calculate the number of pennies to give the customer
+let pennies = calculate_pennies(cents);
+cents = cents - pennies * 1;
 
-    // Sum of coins:
-    let coins = quarters + dimes + nickels + pennies;
+// Sum of coins:
+let coins = quarters + dimes + nickels + pennies;
 
-    // Print total number of coins to give the customer:
-    console.log(coins);
+// Print total number of coins to give the customer:
+console.log(coins);
